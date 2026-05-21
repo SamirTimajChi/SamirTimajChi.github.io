@@ -1,3 +1,9 @@
+# Samir TimajChi — Personal Site
+
+Built with [Jekyll](https://jekyllrb.com/) using the [al-folio](https://github.com/alshedivat/al-folio) theme, hosted on GitHub Pages.
+
+---
+
 # Site Guide
 
 ## Running Locally
