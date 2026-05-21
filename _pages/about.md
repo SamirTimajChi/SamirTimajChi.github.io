@@ -1,12 +1,12 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Composer — Barcelona, Catalunya, Spain
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic.jpeg
   image_circular: false
   more_info: >
     <p>Barcelona, Catalunya, Spain</p>
