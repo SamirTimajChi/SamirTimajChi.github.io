@@ -4,55 +4,41 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-about",
-    title: "about",
+    title: "About",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "dropdown-projects",
-              title: "projects",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/projects/";
-              },
-            },{id: "dropdown-compositions",
-              title: "compositions",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/compositions/";
-              },
-            },{id: "dropdown-writings",
-              title: "writings",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/writings/";
-              },
-            },{id: "dropdown-interviews",
-              title: "interviews",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/interviews/";
-              },
-            },{id: "nav-cv",
+  },{id: "nav-works",
+          title: "Works",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/works/";
+          },
+        },{id: "nav-blog",
+          title: "Blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blogs/";
+          },
+        },{id: "nav-cv",
           title: "CV",
           description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
+        },{id: "post-toʊ",
         
-          title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+          title: "/toʊ/",
         
-        description: "We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.",
+        description: "For 4 singers, Dom Ambisonic, and a dancer. Premiered by PHØNIX16 at RadialSystem Berlin, November 16, 2024.",
         section: "Posts",
         handler: () => {
           
-            window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
+            window.location.href = "/blog/2024/tou/";
           
         },
       },{id: "post-a-sample-interview",
@@ -77,17 +63,6 @@ ninja.data = [{
             window.location.href = "/blog/2024/sample-writing/";
           
         },
-      },{id: "post-project-1",
-        
-          title: "project 1",
-        
-        description: "with background image",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/project-1/";
-          
-        },
       },{id: "post-project-2",
         
           title: "project 2",
@@ -97,17 +72,6 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2024/composition-1/";
-          
-        },
-      },{id: "post-displaying-external-posts-on-your-al-folio-blog",
-        
-          title: 'Displaying External Posts on Your al-folio Blog <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
           
         },
       },{
