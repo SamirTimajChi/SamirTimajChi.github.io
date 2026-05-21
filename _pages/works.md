@@ -16,7 +16,7 @@ nav_order: 2
 <div class="Projects">
   <div class="row row-cols-1 row-cols-md-3">
     {% for project in project_posts %}
-      {% include Projects.liquid %}
+      {% include projects.liquid %}
     {% endfor %}
   </div>
 </div>
@@ -34,7 +34,7 @@ nav_order: 2
 <div class="Projects">
   <div class="row row-cols-1 row-cols-md-3">
     {% for project in composition_posts %}
-      {% include Projects.liquid %}
+      {% include projects.liquid %}
     {% endfor %}
   </div>
 </div>
