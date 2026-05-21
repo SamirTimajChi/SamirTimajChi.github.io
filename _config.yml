@@ -2,12 +2,12 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Samir's Portfolio # the website title (if blank, full name will be used instead)
+title: Samir TimajChi # the website title (if blank, full name will be used instead)
 first_name: Samir
 middle_name:
 last_name: TimajChi
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  Feel free to write to me directly if you have any inquiries
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >

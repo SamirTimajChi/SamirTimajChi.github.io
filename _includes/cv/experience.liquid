@@ -8,8 +8,10 @@
 <ul class="card-text font-weight-light list-group list-group-flush">
   {% for entry in entries %}
     <li class="list-group-item">
-      <div class="row">
-        <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
+      <div class="d-flex align-items-start">
+
+        {% comment %} Date + location column {% endcomment %}
+        <div style="flex: 0 0 130px; width: 130px; margin-right: 1rem; overflow: hidden;">
           {% capture start_date %}
             {% if entry.start_date %}{{ entry.start_date }}{% elsif entry.startDate %}{{ entry.startDate }}{% endif %}
           {% endcapture %}
@@ -17,74 +19,66 @@
             {% if entry.end_date %}{{ entry.end_date }}{% elsif entry.endDate %}{{ entry.endDate }}{% endif %}
           {% endcapture %}
 
-          {% if start_date != '' %}
-            {% comment %} Extract year only from dates like "1933-01-01" or just use "1933" as is {% endcomment %}
-            {% assign startDate = start_date | split: '-' | first %}
-            {% assign endDate = end_date | split: '-' | first | default: 'Present' %}
-            {% assign date = startDate | append: ' - ' | append: endDate %}
-          {% else %}
-            {% assign date = '' %}
+          {% assign start_date_stripped = start_date | strip %}
+          {% assign end_date_stripped = end_date | strip %}
+          {% if start_date_stripped != '' %}
+            {% assign startDate = start_date_stripped | split: '-' | first %}
+            {% assign endDate = end_date_stripped | split: '-' | first %}
+            {% if endDate == '' %}
+              {% assign date = startDate | append: ' - Present' %}
+            {% elsif endDate == startDate %}
+              {% assign date = startDate %}
+            {% else %}
+              {% assign date = startDate | append: ' - ' | append: endDate %}
+            {% endif %}
+            <span class="badge font-weight-bold danger-color-dark text-uppercase" style="white-space: nowrap;">{{ date }}</span>
           {% endif %}
 
-          <table class="table-cv">
-            <tbody>
-              <tr>
-                <td>
-                  <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">{{ date }}</span>
-                </td>
-              </tr>
-              {% capture location %}
-                {% if entry.location %}{{ entry.location }}{% endif %}
-              {% endcapture %}
-              {% if location != '' %}
-                <tr>
-                  <td>
-                    <p class="location">
-                      <i class="fa-solid fa-location-dot iconlocation"></i>
-                      {{ location }}
-                    </p>
-                  </td>
-                </tr>
-              {% endif %}
-            </tbody>
-          </table>
+          {% capture location %}{% if entry.location %}{{ entry.location }}{% endif %}{% endcapture %}
+          {% assign location = location | strip %}
+          {% if location != '' %}
+            {% assign location_parts = location | split: ', ' %}
+            <p class="location mt-1 mb-0" style="font-size: 0.8rem; line-height: 1.3;">
+              <i class="fa-solid fa-location-dot iconlocation"></i>
+              {% for part in location_parts %}{{ part }}<br>{% endfor %}
+            </p>
+          {% endif %}
         </div>
-        <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
-          {% capture position_title %}
-            {% if entry.position %}{{ entry.position }}{% endif %}
-          {% endcapture %}
+
+        {% comment %} Content column {% endcomment %}
+        <div style="flex: 1;">
+          {% capture position_title %}{% if entry.position %}{{ entry.position }}{% endif %}{% endcapture %}
+          {% assign position_title = position_title | strip %}
 
           {% if entry.url %}
-            <h6 class="title font-weight-bold ml-1 ml-md-4">
-              <a href="{{ entry.url }}">{{ position_title }}</a>
-            </h6>
+            <h6 class="title font-weight-bold mb-1"><a href="{{ entry.url }}">{{ position_title }}</a></h6>
           {% elsif position_title != '' %}
-            <h6 class="title font-weight-bold ml-1 ml-md-4">{{ position_title }}</h6>
+            <h6 class="title font-weight-bold mb-1">{{ position_title }}</h6>
           {% endif %}
 
           {% capture company_name %}
             {% if entry.name %}{{ entry.name }}{% elsif entry.company %}{{ entry.company }}{% elsif entry.organization %}{{ entry.organization }}{% endif %}
           {% endcapture %}
+          {% assign company_name = company_name | strip %}
           {% if company_name != '' %}
-            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ company_name }}</h6>
+            <h6 class="mb-1" style="font-size: 0.95rem;">{{ company_name }}</h6>
           {% endif %}
 
           {% if entry.summary %}
-            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">
+            <p class="mb-1" style="font-size: 0.9rem; font-style: italic;">
               {{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}
-            </h6>
+            </p>
           {% endif %}
 
           {% if entry.highlights %}
-            <ul class="items">
+            <ul class="items mb-0">
               {% for item in entry.highlights %}
-                <li>
-                  <span class="item">{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</span>
-                </li>
+                <li><span class="item">{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</span></li>
               {% endfor %}
             </ul>
           {% endif %}
         </div>
+
       </div>
     </li>
   {% endfor %}

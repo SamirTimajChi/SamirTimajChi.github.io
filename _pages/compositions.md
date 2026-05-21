@@ -1,10 +1,10 @@
 ---
 layout: page
-title: projects
-permalink: /projects/
-description: A selection of projects.
+title: compositions
+permalink: /compositions/
+description: A selection of compositions.
 nav: false
-display_category: project
+display_category: composition
 ---
 
 <div class="projects">
@@ -17,6 +17,6 @@ display_category: project
   {% include projects.liquid %}
 </div>
 {% else %}
-<p>No projects yet. Add posts to <code>_posts/works/projects/</code> with <code>category: project</code>.</p>
+<p>No compositions yet. Add posts to <code>_posts/works/compositions/</code> with <code>category: composition</code>.</p>
 {% endif %}
 </div>
