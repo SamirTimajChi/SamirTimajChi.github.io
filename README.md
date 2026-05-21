@@ -4,13 +4,42 @@ Built with [Jekyll](https://jekyllrb.com/) using the [al-folio](https://github.c
 
 ---
 
+To do:
+
+- [ ] Works (change projects to works). Sub-categories:
+  - [ ] Projects
+    - [x] **`toʊ`**
+    - [ ] The Art of Virtuoso
+    - [ ] Infinite
+    - [ ] Hung Hair
+    - [ ] Proj with Lydia NIME?
+	
+  - [ ] Compostitions
+    - [ ] toʊ
+    - [ ] Graphical score ?
+
+- [ ] Blogs (with sub categories)
+  - [ ] Writings
+  - [ ] Interviews
+
+---
+
 # Site Guide
 
 ## Running Locally
 
+Requires Ruby (≥ 3.0) and Bundler. Install once:
+
 ```bash
-docker compose pull && docker compose up
-# visit http://localhost:8080
+gem install bundler
+bundle install
+```
+
+Then to run:
+
+```bash
+bundle exec jekyll serve
+# visit http://localhost:4000
 ```
 
 ---
