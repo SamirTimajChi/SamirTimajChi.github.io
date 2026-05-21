@@ -5,6 +5,7 @@ date: 2024-01-01 12:00:00
 description: A placeholder writing post to populate the writings section.
 tags: writing
 categories: writings
+img: assets/img/9.jpg
 ---
 
 This is a sample writing post. Replace this with your own content.

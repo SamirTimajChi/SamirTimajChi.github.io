@@ -5,6 +5,7 @@ date: 2024-01-02 12:00:00
 description: A placeholder interview post to populate the interviews section.
 tags: interview
 categories: interviews
+img: assets/img/7.jpg
 ---
 
 This is a sample interview post. Replace this with your own content.

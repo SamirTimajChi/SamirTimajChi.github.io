@@ -13,17 +13,15 @@ nav_order: 3
 
 {% assign writing_posts = site.posts | where_exp: "post", "post.categories contains 'writings'" | sort: "date" | reverse %}
 {% if writing_posts.size > 0 %}
-<ul class="post-list">
-  {% for post in writing_posts %}
-  <li>
-    <h3><a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-    {% if post.description %}<p>{{ post.description }}</p>{% endif %}
-    <p class="post-meta">{{ post.date | date: '%B %d, %Y' }}</p>
-  </li>
-  {% endfor %}
-</ul>
+<div class="projects">
+  <div class="row row-cols-1 row-cols-md-3">
+    {% for project in writing_posts %}
+      {% include projects.liquid %}
+    {% endfor %}
+  </div>
+</div>
 {% else %}
-<p>No Writings yet. Add posts with <code>categories: Writings</code> to see them here.</p>
+<p>No writings yet. Add posts with <code>categories: writings</code> to see them here.</p>
 {% endif %}
 
 <div style="display: flex; align-items: center; margin: 3rem 0 1.5rem;">
@@ -33,15 +31,13 @@ nav_order: 3
 
 {% assign interview_posts = site.posts | where_exp: "post", "post.categories contains 'interviews'" | sort: "date" | reverse %}
 {% if interview_posts.size > 0 %}
-<ul class="post-list">
-  {% for post in interview_posts %}
-  <li>
-    <h3><a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-    {% if post.description %}<p>{{ post.description }}</p>{% endif %}
-    <p class="post-meta">{{ post.date | date: '%B %d, %Y' }}</p>
-  </li>
-  {% endfor %}
-</ul>
+<div class="projects">
+  <div class="row row-cols-1 row-cols-md-3">
+    {% for project in interview_posts %}
+      {% include projects.liquid %}
+    {% endfor %}
+  </div>
+</div>
 {% else %}
-<p>No Interviews yet. Add posts with <code>categories: Interviews</code> to see them here.</p>
+<p>No interviews yet. Add posts with <code>categories: interviews</code> to see them here.</p>
 {% endif %}
