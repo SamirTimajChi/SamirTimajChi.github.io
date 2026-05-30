@@ -85,17 +85,6 @@ ninja.data = [{
             window.location.href = "/blog/2024/unknown/";
           
         },
-      },{id: "post-a-sample-writing",
-        
-          title: "a sample writing",
-        
-        description: "A placeholder writing post to populate the writings section.",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/sample-writing/";
-          
-        },
       },{id: "post-lullaby-for-string-quartet",
         
           title: "Lullaby for String Quartet",
