@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-toʊ",
+        },{id: "post-the-art-of-virtuoso",
+        
+          title: "The Art of Virtuoso",
+        
+        description: "For wind instrument, keyboard, and string instrument with EMG sensors, contact microphones, and Max/MSP.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/art-of-virtuoso/";
+          
+        },
+      },{id: "post-toʊ",
         
           title: "/toʊ/",
         
@@ -39,6 +50,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2024/tou/";
+          
+        },
+      },{id: "post-six",
+        
+          title: "SiX",
+        
+        description: "Score for six performers with light.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/six/";
           
         },
       },{id: "post-a-sample-interview",
@@ -52,6 +74,17 @@ ninja.data = [{
             window.location.href = "/blog/2024/sample-interview/";
           
         },
+      },{id: "post-unknown",
+        
+          title: "Unknown",
+        
+        description: "Performed by MusicAEterna.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/unknown/";
+          
+        },
       },{id: "post-a-sample-writing",
         
           title: "a sample writing",
@@ -63,15 +96,37 @@ ninja.data = [{
             window.location.href = "/blog/2024/sample-writing/";
           
         },
-      },{id: "post-project-2",
+      },{id: "post-lullaby-for-string-quartet",
         
-          title: "project 2",
+          title: "Lullaby for String Quartet",
         
-        description: "a project with a background image and giscus comments",
+        description: "For String Quartet.",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/composition-1/";
+            window.location.href = "/blog/2024/lullaby/";
+          
+        },
+      },{id: "post-hung-hair",
+        
+          title: "Hung Hair",
+        
+        description: "Performance work exploring executions, women&#39;s rights, and the fight for freedom of dress.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/hunghair/";
+          
+        },
+      },{id: "post-infinite",
+        
+          title: "(infinite)",
+        
+        description: "Generative, rhizomatic music system for Bösendorfer Imperial Piano, nine microphones, and web interface.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/infinite/";
           
         },
       },{
