@@ -34,22 +34,11 @@ ninja.data = [{
         
           title: 'We All Deserve to Be at the Top <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "Interview published on Platform B.",
+        description: "Interview published on platformB.",
         section: "Posts",
         handler: () => {
           
             window.open("https://www.platformb.art/work/we-all-deserve-to-be-at-the-top/", "_blank");
-          
-        },
-      },{id: "post-the-art-of-virtuoso",
-        
-          title: "The Art of Virtuoso",
-        
-        description: "For wind instrument, keyboard, and string instrument with EMG sensors, contact microphones, and Max/MSP.",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/art-of-virtuoso/";
           
         },
       },{id: "post-toʊ",
@@ -63,28 +52,6 @@ ninja.data = [{
             window.location.href = "/blog/2024/tou/";
           
         },
-      },{id: "post-six",
-        
-          title: "SiX",
-        
-        description: "Score for six performers with light.",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/six/";
-          
-        },
-      },{id: "post-unknown",
-        
-          title: "Unknown",
-        
-        description: "Performed by MusicAEterna.",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/unknown/";
-          
-        },
       },{id: "post-lullaby-for-string-quartet",
         
           title: "Lullaby for String Quartet",
@@ -93,18 +60,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/lullaby/";
-          
-        },
-      },{id: "post-hung-hair",
-        
-          title: "Hung Hair",
-        
-        description: "Performance work exploring executions, women&#39;s rights, and the fight for freedom of dress.",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/hunghair/";
+            window.location.href = "/blog/2023/lullaby/";
           
         },
       },{id: "post-infinite",
@@ -116,6 +72,50 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2023/infinite/";
+          
+        },
+      },{id: "post-the-art-of-virtuoso",
+        
+          title: "The Art of Virtuoso",
+        
+        description: "For wind instrument, keyboard, and string instrument with EMG sensors, contact microphones, and Max/MSP.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/art-of-virtuoso/";
+          
+        },
+      },{id: "post-hung-hair",
+        
+          title: "Hung Hair",
+        
+        description: "Performance work exploring executions, women&#39;s rights, and the fight for freedom of dress.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/hunghair/";
+          
+        },
+      },{id: "post-unknown",
+        
+          title: "Unknown",
+        
+        description: "A work for singer and double bass premiered by MusicAEterna soloists, Kristia Michael and Carlo Navarro Herrero",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/unknown/";
+          
+        },
+      },{id: "post-six",
+        
+          title: "SiX",
+        
+        description: "A work for pianists integrating a lighting dramaturgy as an integral part of the score.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/six/";
           
         },
       },{
