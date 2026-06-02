@@ -56,7 +56,7 @@ ninja.data = [{
         
           title: "Lullaby for String Quartet",
         
-        description: "For String Quartet.",
+        description: "Premiered by Arditti Quartet",
         section: "Posts",
         handler: () => {
           
@@ -78,7 +78,7 @@ ninja.data = [{
         
           title: "The Art of Virtuoso",
         
-        description: "For wind instrument, keyboard, and string instrument with EMG sensors, contact microphones, and Max/MSP.",
+        description: "For Trio with EMG sensors, contact microphones, and Max/MSP.",
         section: "Posts",
         handler: () => {
           
@@ -111,7 +111,7 @@ ninja.data = [{
         
           title: "SiX",
         
-        description: "A work for pianists integrating a lighting dramaturgy as an integral part of the score.",
+        description: "A work for pianists integrating a lighting dramaturgy as an integral part of the score. Premiered by Aleksandra Listova and Dimitry Batalov",
         section: "Posts",
         handler: () => {
           
