@@ -2,7 +2,7 @@
 layout: page
 title: The Art of Virtuoso
 date: 2023-01-14
-description: For wind instrument, keyboard, and string instrument with EMG sensors, contact microphones, and Max/MSP.
+description: For Trio with EMG sensors, contact microphones, and Max/MSP.
 category: project
 importance: 2
 img: assets/img/art-of-virtuoso/score-abstract.jpg
