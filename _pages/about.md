@@ -26,8 +26,12 @@ latest_posts:
   limit: 3
 ---
 
-I am a composer currently based in Barcelona. I hold a Bachelor of Music in Composition from the Hochschule für Musik Carl Maria von Weber Dresden (HfMDD, 2022–2025), a Special Degree in Composition from the Rimsky-Korsakov St. Petersburg State Conservatory (2019–2022), and a Bachelor in Music from the Baha'i Institute for Higher Education in Tehran (2015–2019).
+I am an Iranian-born, world-citizen composer. my experimentation with different ways of perceiving, thinking, and sharing began in September 1992 and continues throughout Iran, Russia, and several European countries.
 
-My work spans orchestral music, electronic and electroacoustic composition, chamber music, installation, and improvisation. Recent premieres include */toU/* for 4 singers, Dom Ambisonic and dancer (Radialsystem - Voices Festival, Berlin, 2024, premiered by Phønix16), *Peak Waver* (Saxon Peace Award Ceremony, Dresden, 2024), and *Tumultuous* for orchestra (premiered by Sinfonietta Dresden). My compositions have been performed by the Arditti Quartet, Ictus Ensemble, JUST Ensemble, and others across Europe, Russia, and the Americas.
+While studying at the University of Music Dresden, the St. Petersburg Conservatory, BIHE University, and in private lessons, I was mentored by notable composers, including Chaya Czernowin, Sarah Nemtsov, Stefan Prins, Alexander Radvilovich, Mehran Rouhani, Farshid Samandari, Steven Takasugi, and Manos Tsangaris.
 
-I co-founded and served as artistic director of JUST Ensemble (2021–2022) and have participated in residencies and festivals including the Diaghilev Festival (Perm), reMusik.org (St. Petersburg), FOLK's Festival (Novosibirsk), IYCA Ticino (Lugano), and the Roadrunner Academy (Amsterdam). Awards include the DAAD-Prize for International Students (2024), the Internationales Musikinstitut Darmstadt Stipend (2023), and the Ernst von Siemens Music Foundation Student Aid Fund (2022).
+My works have been performed at concerts and festivals such as International Music Institute Darmstadt, reMusik.org, and Voices Berlin Festival, by ensembles including Arditti Quartet, AuditivVokal, and Sinfonietta Dresden.
+
+Alongside my academic and professional endeavours, I was co-founder and former curator of the JUST Ensemble based in St. Petersburg.
+
+I see myself as someone transforming from a consumer into a creator.

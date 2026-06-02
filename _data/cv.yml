@@ -29,6 +29,14 @@ cv:
         end_date: 2019
 
     Experience:
+      - company: platformB
+        position: Composer
+        location: Stuttgart, Germany
+        start_date: 2026
+        end_date: 2026
+        highlights:
+          - '[B as in](https://www.platformb.art/work/b-as-in/)'
+
       - company: HfMDD
         position: Student Composer
         location: Dresden, Germany
@@ -212,7 +220,7 @@ cv:
         date: 2020
 
       - title: reMusik.org Academy Stipend
-        date: 2021
+        date: 2020
         url: https://en.remusik.org/academy/courses/composition/archive/2nd/
 
     Skills:
@@ -223,7 +231,7 @@ cv:
         keywords: "Blender, DaVinci Resolve, Jitter"
 
       - name: Hardware
-        keywords: "Arduino, Circuitry, Instrument Design, PinePhone"
+        keywords: "Arduino, Circuitry, Instrument Design, Pine64"
 
       - name: Other
         keywords: "Contribution to repositories of Arch Linux"
@@ -233,7 +241,7 @@ cv:
         summary: Native
 
       - name: English
-        summary: C2
+        summary: C1
 
       - name: Russian
         summary: B2
