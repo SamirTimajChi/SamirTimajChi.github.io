@@ -16,7 +16,7 @@ selected_papers: false
 social: true
 
 announcements:
-  enabled: true
+  enabled: false
   scrollable: true
   limit: 5
 
@@ -35,3 +35,5 @@ My works have been performed at concerts and festivals such as International Mus
 Alongside my academic and professional endeavours, I was co-founder and former curator of the JUST Ensemble based in St. Petersburg.
 
 I see myself as someone transforming from a consumer into a creator.
+
+<br><br>
