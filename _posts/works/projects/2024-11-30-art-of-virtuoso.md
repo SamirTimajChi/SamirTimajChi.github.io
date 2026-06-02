@@ -1,7 +1,7 @@
 ---
 layout: page
 title: The Art of Virtuoso
-date: 2024-11-30
+date: 2023-01-14
 description: For wind instrument, keyboard, and string instrument with EMG sensors, contact microphones, and Max/MSP.
 category: project
 importance: 2

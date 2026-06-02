@@ -2,7 +2,7 @@
 layout: post
 title: "We All Deserve to Be at the Top"
 date: 2026-05-28 12:00:00
-description: Interview published on Platform B.
+description: Interview published on platformB.
 tags: interview
 categories: interviews
 img: assets/img/platBinterview.png
